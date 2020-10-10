@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Smooth nav</title>
+</head>
+    <link rel="stylesheet" href="nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+<body>
+<header>
+    <a class="logo" href="#"> Saffron</a>
+    <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#services">Service</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</header>
+
+<section class="banner" id="home">
+</section>
+
+<section class="about" id="about">
+    <div class="text-part">
+        <h1>
+            About</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi dolor est nobis veniam!
+            Eius rerum, unde. Accusamus corporis esse eveniet exercitationem fugiat harum pariatur sequi similique
+            tenetur vitae. Aliquam amet est excepturi, exercitationem facere fugit ipsa laborum molestiae nemo officiis
+            placeat quos repellat saepe temporibus voluptatum.
+        </p>
+    </div>
+</section>
+
+<section class="port" id="shop">
+    <div class="text-part">
+        <h1>
+            Shop</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi dolor est nobis veniam!
+            Eius rerum, unde. Accusamus corporis esse eveniet exercitationem fugiat harum pariatur sequi similique
+            tenetur vitae. Aliquam amet est excepturi, exercitationem facere fugit ipsa laborum molestiae nemo officiis
+            placeat quos repellat saepe temporibus voluptatum.
+        </p>
+    </div>
+</section>
+
+<section class="service" id="services">
+    <div class="text-part">
+        <h1>
+            Services</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi dolor est nobis veniam!
+            Eius rerum, unde. Accusamus corporis esse eveniet exercitationem fugiat harum pariatur sequi similique
+            tenetur vitae. Aliquam amet est excepturi, exercitationem facere fugit ipsa laborum molestiae nemo officiis
+            placeat quos repellat saepe temporibus voluptatum.
+        </p>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="text-part">
+        <h1>
+            Contact</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi dolor est nobis veniam!
+            Eius rerum, unde. Accusamus corporis esse eveniet exercitationem fugiat harum pariatur sequi similique
+            tenetur vitae. Aliquam amet est excepturi, exercitationem facere fugit ipsa laborum molestiae nemo officiis
+            placeat quos repellat saepe temporibus voluptatum.
+        </p>
+    </div>
+</section>
+<script>
+    window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+</script>
+</body>
+
+</html>
